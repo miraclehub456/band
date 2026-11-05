@@ -1,302 +1,89 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /* font-family: "Lato", sans-serif; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
 }
 
+
 nav {
-    background-color: black;
-    padding: 10px 0;
+    background-color: antiquewhite;
+    padding: 16px 15px;
     position: fixed;
     width: 100%;
     z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.589);
+}
+
+
+nav p a,
+nav ul li a {
+   color: blueviolet;
+   letter-spacing: 3px;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+
+
+
+nav p a:hover,
+nav ul li a:hover {
+    background-color: greenyellow;
 }
 
 nav ul {
     list-style-type: none;
+    float: right;
+    margin: -17px 30px 0 0;
 }
 
 nav ul li {
     display: inline-block;
 }
 
-nav ul li a, nav p a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-}
-
-nav ul li a:hover {
-    background-color: gainsboro;
-    color: black;
-}
-
-nav ul .dropdown {
-    position: relative;
-}
-
-nav  ul .dropdown .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: 31px;
-}
-
-nav  ul .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-nav  ul .dropdown:hover .dropbtn {
-    background-color: gainsboro;
-    color: black;
-}
-
-nav  ul .dropdown .dropdown-menu a{
-    display: block;
-    color: black;
-}
-
-nav p {
-    float: right;
-    margin-top: -21px;
-}
-
-nav p a:hover {
-    background-color: red;
-}
-
 .hero {
     position: relative;
 }
 
-.hero img {
-    margin-top: 40px;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero .text {
+.hero p {
     position: absolute;
     bottom: 40px;
-    left: 35%;
-    color: white;
+    left: 40px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: blanchedalmond;
+}
+
+.about {
+    padding: 80px 100px;
+}
+
+.about .left {
+    float: left;
+    margin-right: 50px;
+}
+
+.about .left img {
+    width: 550px;
+    border-radius: 10px;
+    opacity: 7;
+}
+
+.about .right h1 {
+    padding-top: 50px;
     text-align: center;
-}
-
-.hero .text h4 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 400;
-    padding-bottom: 15px;
+    letter-spacing: 3px; 
 }
 
-.hero .text p {
-    font-weight: 600;
+.about .right .down {
+    font-size: 17px;
+    line-height: 1.8;
 }
 
-.band {
-    padding: 3rem 20%;
-}
-
-.band h1 {
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.band .mid {
-    text-align: center;
-    color: rgba(0, 0, 0, 0.541);
-    padding: 25px;
-    font-weight: 400;
-}
-
-.band p {
-    text-align: justify;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.band .names {
+.about .right .dowm {
+  font-size: 17px;
+    line-height: 1.8;
+    color: mediumseagreen;
     padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-
-.band .names .name p {
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-.band .names .name img {
-    width: 170px;
-    border-radius: 5px;
-}
-
-
-.tour {
-    padding: 3rem 20%;
-    background-color: black;
-}
-
-.tour h1 {
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: white;
-}
-
-.tour .mid {
-    color: rgba(255, 255, 255, 0.432);
-    text-align: center;
-    padding: 25px;
-    font-weight: 400;
-}
-
-.tour .date {
-    padding-top: 30px;
-}
-
-.tour .date p {
-    background-color: white;
-    padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
-}
-
-.tour .date p span {
-    background-color: red;
-    color: white;
-    padding: 3px 7px;
-    margin-left: 25px;
-}
-
-.tour .date p .num {
-    background-color: black;
-    border-radius: 50%;
-    padding: 3px 9px;
-    float: right;
-    margin-right: 25px;
-}
-
-.tour .cities {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-}
-
-.tour .cities .city {
-    width: 270px;
-}
-
-.tour .cities .city img {
-    width: 100%;
-}
-
-.tour .cities .city img:hover {
-    opacity: .8;
-}
-
-.tour .cities .city .text {
-    background-color: white;
-    padding: 20px;
-    margin-top: -4px;
-}
-
-.tour .cities .city .text .mid {
-   text-align: left;
-   padding: 25px 0;
-   color: rgba(0, 0, 0, 0.582);
-}
-
-.tour .cities .city .text button {
-   padding: 8px 12px;
-   background-color: black;
-   color: white;
-   border: none;
-   margin-top: 25px;
-}
-
-.tour .cities .city .text button:hover {
-   background-color: gainsboro;
-   color: black;
-}
-
-
-.contact {
-    padding: 3rem 20%;
-}
-
-.contact h1 {
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.contact .mid {
-    text-align: center;
-    color: rgba(0, 0, 0, 0.541);
-    padding: 25px;
-    font-weight: 400;
-}
-
-.contact .content {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.contact .content .left {
-    width: 500px;
-}
-
-.contact .content .left p {
-    font-size: 20px;
-}
-
-.contact .content .left p span {
-    margin-left: 15px;
-}
-
-.contact .content form input {
-    width: 48%;
-    height: 40px;
-    margin-bottom: 5px;
-    text-indent: 7px;
-}
-
-.contact .content form .msg {
-    width: 97%;
-}
-
-.contact .content form .msg {
-    width: 97%;
-}
-
-
-.contact .content form button {
-    background-color: black;
-    color: white;
-    padding: 7px 12px;
-    font-size: 16px;
-    border: none;
-    float: right;
-    margin: 10px 15px 0 0;
-
 }
